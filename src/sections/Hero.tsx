@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, FileText } from 'lucide-react';
+import { FileText } from 'lucide-react';
 
 const Hero = () => {
     return (
@@ -51,3 +51,5 @@ const Hero = () => {
         </section>
     );
 };
+
+export default Hero;
