@@ -13,13 +13,23 @@ export const ProjectCard = ({ project }: ProjectProps) => (
     viewport={{ once: true }}
     className="group relative bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500"
   >
-    <div className="aspect-video bg-gradient-to-br from-blue-600/10 to-indigo-600/10 p-6 flex items-center justify-center overflow-hidden">
-      <motion.div 
-        whileHover={{ scale: 1.05 }}
-        className="text-4xl font-bold tracking-tighter opacity-20 group-hover:opacity-40 transition-opacity"
-      >
-        {project.title}
-      </motion.div>
+    <div className="aspect-video bg-gradient-to-br from-blue-600/10 to-indigo-600/10 overflow-hidden relative">
+      {project.image ? (
+        <motion.img 
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          src={project.image} 
+          alt={project.title} 
+          className="w-full h-full object-cover"
+        />
+      ) : (
+        <motion.div 
+          whileHover={{ scale: 1.05 }}
+          className="text-4xl font-bold tracking-tighter opacity-20 group-hover:opacity-40 transition-opacity flex items-center justify-center w-full h-full"
+        >
+          {project.title}
+        </motion.div>
+      )}
     </div>
     
     <div className="p-8">

@@ -34,7 +34,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
           animate={{ opacity: 1, x: 0 }}
           className="text-xl font-black tracking-tighter"
         >
-          HARIZ<span className="text-blue-600">.</span>
+          HARIZ HASWAN<span className="text-blue-600">.</span>
         </motion.div>
 
         {/* Desktop Nav */}

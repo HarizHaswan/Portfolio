@@ -1,33 +1,36 @@
+import { ArrowRight, Github, Mail, Linkedin } from 'lucide-react';
+
 const Contact = () => {
   return (
     <section className="py-24" id="contact">
-      <div className="bg-blue-600 rounded-[3rem] p-12 lg:p-20 text-white overflow-hidden relative">
-        {/* Decorative circle */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl" />
-        
-        <div className="max-w-3xl relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">Let's build something impactful.</h2>
-          <p className="text-blue-100 text-lg mb-10">
-            Currently seeking an internship from **August — December 2026**. 
-            If you're looking for a developer who breathes the MERN stack, let's talk.
-          </p>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
-            <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-md">
-              <span className="block text-blue-200 text-sm mb-1">Email Me</span>
-              <a href="mailto:harizhaswan@example.com" className="text-xl font-bold hover:underline">harizhaswan@email.com</a>
-            </div>
-            <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-md">
-              <span className="block text-blue-200 text-sm mb-1">LinkedIn</span>
-              <a href="#" className="text-xl font-bold hover:underline">in/harizhaswan</a>
-            </div>
-          </div>
+      <div className="bg-[#121212] dark:bg-[#121212] rounded-[3rem] p-12 lg:p-20 text-white flex flex-col items-center text-center shadow-2xl border border-neutral-800">
+        <h2 className="text-4xl lg:text-5xl font-extrabold mb-6 tracking-tight">
+          Let's <span className="text-[#a855f7]">Connect</span>
+        </h2>
 
-          <form className="space-y-4 max-w-md opacity-50 cursor-not-allowed">
-             <input disabled type="text" placeholder="Name" className="w-full p-4 bg-white/10 rounded-xl border border-white/20 outline-none" />
-             <textarea disabled placeholder="Message" className="w-full p-4 bg-white/10 rounded-xl border border-white/20 outline-none h-32" />
-             <button disabled className="w-full py-4 bg-white text-blue-600 font-bold rounded-xl">Send Message (UI Only)</button>
-          </form>
+        <p className="text-slate-400 text-lg mb-12 max-w-2xl leading-relaxed">
+          Currently seeking full-stack internship or software tester opportunities
+          starting August 2026 until December 2026. My inbox is always open for collaborations and
+          inquiries.
+        </p>
+
+        <a
+          href="mailto:muhdhariz237@gmail.com"
+          className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-black rounded-full font-semibold hover:bg-slate-200 transition-colors mb-16"
+        >
+          Email me! <ArrowRight size={20} />
+        </a>
+
+        <div className="flex gap-4">
+          <a href="https://github.com/HarizHaswan" className="w-14 h-14 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors border border-white/10">
+            <Github size={24} className="text-slate-300" />
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-hariz-bin-muhammadhaswan-840443287/" className="w-14 h-14 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors border border-white/10">
+            <Linkedin size={24} className="text-slate-300" />
+          </a>
+          <a href="mailto:muhdhariz237@gmail.com" className="w-14 h-14 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors border border-white/10">
+            <Mail size={24} className="text-slate-300" />
+          </a>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Experience from './sections/Experience';
 import Contact from './sections/Contact';
 import { motion } from 'framer-motion';
 
@@ -25,13 +26,14 @@ const App: React.FC = () => {
                         <About />
                         <Skills />
                         <Projects />
+                        <Experience />
                         <Contact />
                     </motion.div>
                 </main>
 
                 <footer className="py-10 text-center border-t border-slate-200 dark:border-neutral-800">
                     <p className="text-sm opacity-60">
-                        © 2026 Hariz Haswan. Built with MERN stack expertise.
+                        © 2026 Hariz Haswan.
                     </p>
                 </footer>
             </div>

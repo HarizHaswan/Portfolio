@@ -3,9 +3,9 @@ const About = () => {
     <section className="py-24 border-t border-slate-200 dark:border-neutral-900" id="about">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
-          <div className="aspect-square rounded-[3rem] bg-gradient-to-tr from-blue-600 to-indigo-600 overflow-hidden shadow-2xl">
-             {/* Replace with your actual photo */}
-             <div className="absolute inset-0 flex items-center justify-center text-white/20 font-bold text-9xl">HH</div>
+          <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 relative">
+             <img src="/profile.jpg" alt="Muhammad Hariz bin Muhamad Haswan" className="w-full h-full object-cover relative z-10" />
+             {/* If you want a fallback or tint, you can add it here, but object-cover should fill the box */}
           </div>
           <div className="absolute -bottom-6 -right-6 bg-white dark:bg-neutral-900 p-8 rounded-3xl shadow-xl border border-slate-100 dark:border-neutral-800 hidden md:block">
             <p className="text-3xl font-bold text-blue-600">3+</p>

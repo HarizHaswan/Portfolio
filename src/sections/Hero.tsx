@@ -31,8 +31,8 @@ const Hero = () => {
                 transition={{ delay: 0.2 }}
                 className="text-xl opacity-80 max-w-2xl mb-10"
             >
-                Software Engineering Student & Full Stack Developer.
-                Building scalable, modern, and user-friendly web applications using the MERN Stack.
+                Software Engineering Student, Full Stack Developer & Software Tester.
+                Building scalable, modern, and user-friendly web applications using the MERN Stack, with hands-on experience in manual and automation testing gained through a QA/QC internship. Passionate about developing reliable software, improving system quality, and creating efficient digital solutions.
             </motion.p>
 
             <motion.div
@@ -41,12 +41,17 @@ const Hero = () => {
                 transition={{ delay: 0.3 }}
                 className="flex flex-wrap justify-center gap-4"
             >
-                <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-all shadow-lg shadow-blue-500/25">
+                <a href="#projects" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center">
                     View Projects
-                </button>
-                <button className="px-8 py-3 bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 rounded-xl font-semibold flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-neutral-800 transition-all">
+                </a>
+                <a
+                    href="/Resume_Muhammad_Hariz_bin_Muhamad_Haswan.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-3 bg-white dark:bg-neutral-900 border border-slate-200 dark:border-neutral-800 rounded-xl font-semibold flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-neutral-800 transition-all"
+                >
                     <FileText size={18} /> Resume
-                </button>
+                </a>
             </motion.div>
         </section>
     );
